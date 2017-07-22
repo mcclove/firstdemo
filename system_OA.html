@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>劳务派遣系统</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+
+</head>
+<body>
+	<div class="container">
+		<div class="top2 clearfix">
+			<div class="top clearfix w85">
+				<div class="logo lf">
+					<img src="images/logo1.png">
+				</div>
+				<div class="tel rf">
+					<img src="images/tel1.png">
+				</div>
+				<ul class="rf clearfix nav_list">
+					<li class="lf list"><a class="list_b a_active" href="index.html">首页</a></li>
+					<li class="lf list list1">
+						<a class="list_b" id="chanping" onclick="javascript:goto('service');return false;" href="#">产品/软件定制</a>
+						<div class="list_son list_son1 clearfix">
+							<ul class="lf border_r">
+								<h5><a href="#">网站制作类</a></h5>
+								<li><a class="link_a" href="#">网站界面设计</a></li>
+								<li><a class="link_a" href="#">HTML5开发</a></li>
+								<li><a class="link_a" href="#">手机站建设</a></li>
+								<li><a class="link_a" href="#">微信站建设</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="system_OA.html">OA系统</a></h5>
+								<li><a class="link_a" href="#">pc端   OA</a></li>
+								<li><a class="link_a" href="#">移动端  OA</a></li>
+								<h5><a href="#">ERP系统</a></h5>
+								<li><a class="link_a" href="#">人力资源系统</a></li>
+								<li><a class="link_a" href="#">财务系统</a></li>
+								<li><a class="link_a" href="#">CRM系统</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">APP开发</a></h5>
+								<li><a class="link_a" href="#">Android开发</a></li>
+								<li><a class="link_a" href="#">IOS开发</a></li>
+								<h5><a href="#">微信开发</a></h5>
+								<li><a class="link_a" href="#">服务号</a></li>
+								<li><a class="link_a" href="#">订阅号</a></li>
+								<li><a class="link_a" href="#">企业号</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">商业系统</a></h5>
+								<li><a class="link_a" href="#">B2B</a></li>
+								<li><a class="link_a" href="#">B2C</a></li>
+								<li><a class="link_a" href="#">B2B2C</a></li>
+								<h5><a href="#">O2O系统</a></h5>
+							</ul>
+							<ul class="lf">
+								<h5><a href="#">智能硬件</a></h5>
+								<h5><a href="#">人才服务</a></h5>
+							</ul>
+						</div>
+					</li>
+					<li class="lf list list1"><a class="list_b" href="example.html">客户案例</a>
+						<div class="list_son list_son2 clearfix">
+							<ul class="lf border_r">
+								<h5><a href="#">教育行业</a></h5>
+								<li><a class="link_a" href="#">码道云课堂在线编程学习平台</a></li>
+								<li><a class="link_a" href="#">中国科大研究生招生移动信息化解决方案</a></li>
+								<li><a class="link_a" href="#">adidas夏令营招生推广系统</a></li>
+								<li><a class="link_a" href="#">唐仲奖学金交流会平台</a></li>
+								<li><a class="link_a" href="#">中国科大大学生骨干培训在线教育系统</a></li>
+								<li><a class="link_a" href="#">中国科大"两学一做"学习平台</a></li>
+								<li><a class="link_a" href="#">中国科大先进班集体、项目评优系统</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">人力资源行业</a></h5>
+								<li><a class="link_a" href="#">皖信人力资源派遣服务ERP系统</a></li>
+								<li><a class="link_a" href="#">沃尔网（服务于中小企业的电子商务平台）</a></li>
+								<li><a class="link_a" href="#">好工匠智能用工平台</a></li>
+								<h5><a href="#">大数据</a></h5>
+								<li><a class="link_a" href="#">揽众大数据平台</a></li>
+								<h5><a href="#">交通行业</a></h5>
+								<li><a class="link_a" href="#">中安停留智能停车系统</a></li>
+							</ul>
+							<ul class="lf">
+								<h5><a href="#">医疗行业</a></h5>
+								<li><a class="link_a" href="#">行业医院在线预约挂号系统</a></li>
+								<li><a class="link_a" href="#">儿童医院就医指南系统</a></li>
+								<li><a class="link_a" href="#">儿童医院移动医疗信息化系统</a></li>
+								<h5><a href="#">通信和智能硬件行业</a></h5>
+								<li><a class="link_a" href="#">上海海积架宝科目三APP平台</a></li>
+								<li><a class="link_a" href="#">智能按摩仪系统</a></li>
+								<h5><a href="#">O2O行业</a></h5>
+								<li><a class="link_a" href="#">易修来了</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="lf list"><a class="list_b" href="about.html">关于我们</a></li>
+					<li class="lf list"><a class="list_b" href="hesuan.html">核算报价</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="release">
+			<div class="release_con w1200">
+				<div class="labor_title">
+					<h2>PRODUCTS    <span>INTRODUCTION</span></h2>
+					<h3>瀚云OA系统</h3>
+				</div>
+				<ul class="release_ul clearfix">
+					<li class="lf qiyeb d_release release_li">企业版</li>
+					<li class="lf zhengwub d_release">政务版</li>
+					<li class="lf yiliaob d_release">医疗版</li>
+					<li class="lf yidongb d_release">移动版</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content_OA">
+			<div class="content1 d_active">
+				<div class="content_text">
+					<p class="w1200">
+						企业版解决方案由五大应用、两个支撑平台组成，分别为知识管理、工作流程、辅助办公、集成解决方案及应用支撑平台、基础支撑平台；<br/>
+						知识管理：搭建企业知识库，为知识的沉淀、共享、学习、应用、创新提供了基础；<br/>
+						工作流程：打造企业内部电子化流程管理，是协助企业制度落地的有效管理工具；<br/>
+						沟通流程：搭建了员工与员工、上级与下级单位之间的沟通桥梁，提升了企业的快速应变能力；<br/>
+						辅助办公：提供了个人事务管理、行政后勤管理及人事管理，有效组织和管理企业的员工，以及他们的工作；</br>
+						集成解决方案：可集成VPN、电子签章、CA认证、财务系统、HR系统、CRP系统、ERP软件、外部邮件等功能；<br/>
+						应用支撑平台：提供组织机构、用户、角色、权限、管理体系及日志与系统安全体系，并设计有丰富的第三方系统接口；<br/>
+						基础支撑平台：系统可运行在windows、linux、AIX、solaris等多种操作系统上、支持IBM webspere、ORACLE weblogic、tomcat等、oracle、sqlserver、DB2、mysql、sybase等多种关系型数据。
+					</p>
+				</div>
+				<div class="application pt50">
+					<div class="w1200 clearfix">
+						<div class="service_con clearfix">
+							<div class="row_one clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/zs.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>知识管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/pd.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>工作流程</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/fp.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>沟通交流</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link last_link lf" href="#">
+									<dl>
+										<dt><img src="images/gz.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>公交管理平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							<div class="clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/xx.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>财务管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/jc.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>集成解决方案</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/yy.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>应用支撑平台</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link last_linklf" href="#">
+									<dl>
+										<dt><img src="images/cb.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>催办督办平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="relevant">
+					<div class="relevant_example clearfix w1200">
+						<div class="labor_title">
+							<h3>相应案例</h3>
+						</div>
+						<div class="clearfix photo_parent">	
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content_text">
+					<p class="w1200">
+						协同管理平台在账务应用中扮演着越来越重要的角色，承担着组织建设、知识建设、沟通协作、数据分析、管理决策等重担。对政府协同办公的发展趋势，在产品设计上遵循平台化、门户化、易用性和整合性理念，为用户提供的不仅仅是一个协同办公软件，更是一个易用的协同管理平台。<br/>
+						政府版协同管理平台整体架构分为四大部分：系统层、服务层、应用层、表现层。系统采用模块化的设计和组件技术，通过一系列基础组装，可以像搭积木一样，迅速生成所需软件的主体架构和核心功能，应用程序开发者只需要编写特定的应用逻辑即可，这样大大加快了软件产品的开发速度，可以轻松面对顾客多变的需求，快速发布出高质量的软件产品。<br/>
+		 				系统可运行在windows、Linux、AIX、Solaris等多种操作系统上，支持IBM websphere、weblogic、tomcat等多种中间件，支持oracle、sqlserver、DB2、mysql等多种数据库。<br/>
+						系统层和服务层提供组织架构、用户、角色、权限管理体系及日志与系统安全体系，并设计有丰富的供第三方系统调用的接口。
+					</p>                                                                                                            
+				</div>
+				<div class="application pt50">
+					<div class="w1200 clearfix">
+						<div class="service_con clearfix">
+							<div class="row_one clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/zs.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>知识管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/pd.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>工作流程</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/fp.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>沟通交流</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/gz.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>公交管理平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							<div class="clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/xx.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>财务管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/jc.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>集成解决方案</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/yy.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>应用支撑平台</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/cb.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>催办督办平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="relevant">
+					<div class="relevant_example clearfix w1200">
+						<div class="labor_title">
+							<h3>相应案例</h3>
+						</div>
+						<div class="clearfix photo_parent">	
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content3">
+				<div class="content_text">
+					<p class="w1200">
+						医疗版包含基础套件与扩展产品涵盖门户自定义平台、信息只是平台、工作流程平台、公文管理平台通讯沟通平台、个人办公平台、综合办公平台、人力资源管理、医风医德管理、党员管理、系统管理平台功能，它以工作流引擎为底层服务，以通讯沟通平台为交流手段，以门户自定义平台为信息推送显示平台，为用户提供集成的协作工作环境和业务定制服务<br/>
+						医疗版协同管理平台整体架构分为四大部分：系统层、服务层、应用层、表现层、系统应用模块化的设计和组件设计，通过一系列基础组件的组装，可以像搭积木一样，迅速生成所需软件的主主体结构和核心功能，应用程序开发者只需要编写特定的应用逻辑即可，这样加快了软件产品的开发速度、可以轻松面对客户多变需求，快速发布出高质量的软件产品。<br/>
+						sqlserver、DB2、mysql等多种数据库。<br/>
+						系统层和服务层提供组织架构、用户、角色、权限管路体系及日日志与系统安全体系，并设计有丰富的供第三方系统调用的接口。
+					</p>
+				</div>
+				<div class="application pt50">
+					<div class="w1200 clearfix">
+						<div class="service_con clearfix">
+							<div class="row_one clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/zs.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>知识管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/pd.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>工作流程</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/fp.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>沟通交流</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/gz.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>公交管理平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							<div class="clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/xx.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>财务管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/jc.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>集成解决方案</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/yy.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>应用支撑平台</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/cb.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>催办督办平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="relevant">
+					<div class="relevant_example clearfix w1200">
+						<div class="labor_title">
+							<h3>相应案例</h3>
+						</div>
+						<div class="clearfix photo_parent">	
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content4">
+				<div class="content_text">
+					<p class="w1200">
+						移动办公版系统基于移动中间件开发而成，移动中间件你不仅仅可以帮助协同办公系统实现移动办公，还可帮助客户业务系统实现移动化。移动办公系统在移动中间件平台上通过OA提供的web service接口开发而成。目前测试通过的手机操作系统主要ios Android，可以支持多种极端，多种形式访问：<br/>
+					</p>
+					<div class="w1200">
+						<h4 class="yidong">支持ios android操作系统手机通过C/S客户端形式访问</h4>
+						<h4 class="yidong">支持ios、android、windows Mobile操作系统手机通过B/S浏览器形式访问</h4>
+						<h4 class="yidong">支持ios、android、windows Mobile操作系统PAD通过B/S浏览器形式访问</h4>
+						<br>	
+						<br>	
+						<br>	
+						<br>
+						<br>		
+					</div>
+				</div>
+				<div class="application pt50">
+					<div class="w1200 clearfix">
+						<div class="service_con clearfix">
+							<div class="row_one clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/zs.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>知识管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/pd.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>工作流程</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/fp.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>沟通交流</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/gz.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>公交管理平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							<div class="clearfix">
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/xx.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>财务管理</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/jc.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>集成解决方案</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/yy.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>应用支撑平台</h4>
+										</dd>
+									</dl>
+								</a>
+								<a class="big_link lf" href="#">
+									<dl>
+										<dt><img src="images/cb.jpg"></dt>
+										<dd class="photo_destails">
+											<h4>催办督办平台</h4>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="relevant">
+					<div class="relevant_example clearfix w1200">
+						<div class="labor_title">
+							<h3>相应案例</h3>
+						</div>
+						<div class="clearfix photo_parent">	
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+							<dl class="lf photo mr10">
+								<dt class="yixiu">
+									<img src="images/yixiu.jpg">
+								</dt>
+								<dd class="yixiu_text">
+									<h5>易修来了</h5>
+									<h6>所属行业：汽车后市场、互联网</h6>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_ul w1200 clearfix">
+				<div class="lf ewm">
+					<img src="images/ewm.jpg">
+					<p>微信公众号</p>
+				</div>
+				<ul class="end_ul clearfix lf">
+					<h3>我们的信息</h3>
+					<li>官方咨询热线：0551-63648878</li>
+					<li>邮箱：xyxu@hiyuntek.com</li>
+					<li>地址：安徽合肥高新区软件园2#105</li>
+				</ul>
+				<ul class="lf solo_destails">
+					<h3>联系我们</h3>
+					<li>
+						<input type="text" name="" placeholder="您的姓名">
+					</li>
+					<li>
+						<input type="text" name="" placeholder="电话号码">
+					</li>
+					<li class="clearfix">
+						<textarea class="textarea3 lf" type="text" name="" placeholder="您的需求简述"></textarea>
+						<button class="lf">提交</button>
+					</li>
+				</ul>
+				<div class="end">
+					<h6>Copyright 2014-2017 www.hiyuntek.com All Right Reserved 版权所有：合肥中科瀚云信息科技有限公司</h6>
+					<h6>皖备21029602000048号</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+		$(".list1").hover(function(){
+			$(this).children(".list_a").addClass("list_active");
+			$(this).children(".list_son").show();
+		},function(){
+			$(this).children(".list_a").removeClass("list_active");
+			$(this).children(".list_son").hide();
+		});
+		$(function(){
+			$(".qiyeb").click(function(){
+				$(this).addClass("release_li").siblings().removeClass("release_li");
+				$(".content1").addClass("d_active").siblings().removeClass("d_active");
+			});
+			$(".zhengwub").click(function(){
+				$(this).addClass("release_li").siblings().removeClass("release_li");
+				$(".content2").addClass("d_active").siblings().removeClass("d_active");
+			});
+			$(".yiliaob").click(function(){
+				$(this).addClass("release_li").siblings().removeClass("release_li");
+				$(".content3").addClass("d_active").siblings().removeClass("d_active");
+			});
+			$(".yidongb").click(function(){
+				$(this).addClass("release_li").siblings().removeClass("release_li");
+				$(".content4").addClass("d_active").siblings().removeClass("d_active");
+			});
+		});
+</script>	
+</body>
+</html>

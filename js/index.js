@@ -1,0 +1,27 @@
+	$(function(){
+		$(".footer_a").click(function(){
+			$(".footer_a").removeClass("footer_active");
+			$(this).addClass("footer_active");
+		});
+	});
+
+$(function(){
+	$(".bg").click(function(){
+		$(".footer_con1").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+	$(".fz").click(function(){
+		$(".footer_con2").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+	$(".sh").click(function(){
+		$(".footer_con3").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+	$(".xa").click(function(){
+		$(".footer_con4").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+	$(".km").click(function(){
+		$(".footer_con5").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+	$(".mg").click(function(){
+		$(".footer_con6").addClass("chaxun_active").siblings().removeClass("chaxun_active");
+	});
+})

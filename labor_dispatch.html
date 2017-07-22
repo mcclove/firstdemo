@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>劳务派遣系统</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+
+</head>
+<body>
+	<div class="container">
+		<div class="top2 clearfix">
+			<div class="top clearfix w85">
+				<div class="logo lf">
+					<img src="images/logo1.png">
+				</div>
+				<div class="tel rf">
+					<img src="images/tel1.png">
+				</div>
+				<ul class="rf clearfix nav_list">
+					<li class="lf list"><a class="list_b a_active" href="index.html">首页</a></li>
+					<li class="lf list list1">
+						<a class="list_b" id="chanping" onclick="javascript:goto('service');return false;" href="#">产品/软件定制</a>
+						<div class="list_son list_son1 clearfix">
+							<ul class="lf border_r">
+								<h5><a href="#">网站制作类</a></h5>
+								<li><a class="link_a" href="#">网站界面设计</a></li>
+								<li><a class="link_a" href="#">HTML5开发</a></li>
+								<li><a class="link_a" href="#">手机站建设</a></li>
+								<li><a class="link_a" href="#">微信站建设</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="system_OA.html">OA系统</a></h5>
+								<li><a class="link_a" href="#">pc端   OA</a></li>
+								<li><a class="link_a" href="#">移动端  OA</a></li>
+								<h5><a href="#">ERP系统</a></h5>
+								<li><a class="link_a" href="#">人力资源系统</a></li>
+								<li><a class="link_a" href="#">财务系统</a></li>
+								<li><a class="link_a" href="#">CRM系统</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">APP开发</a></h5>
+								<li><a class="link_a" href="#">Android开发</a></li>
+								<li><a class="link_a" href="#">IOS开发</a></li>
+								<h5><a href="#">微信开发</a></h5>
+								<li><a class="link_a" href="#">服务号</a></li>
+								<li><a class="link_a" href="#">订阅号</a></li>
+								<li><a class="link_a" href="#">企业号</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">商业系统</a></h5>
+								<li><a class="link_a" href="#">B2B</a></li>
+								<li><a class="link_a" href="#">B2C</a></li>
+								<li><a class="link_a" href="#">B2B2C</a></li>
+								<h5><a href="#">O2O系统</a></h5>
+							</ul>
+							<ul class="lf">
+								<h5><a href="#">智能硬件</a></h5>
+								<h5><a href="#">人才服务</a></h5>
+							</ul>
+						</div>
+					</li>
+					<li class="lf list list1"><a class="list_b" href="example.html">客户案例</a>
+						<div class="list_son list_son2 clearfix">
+							<ul class="lf border_r">
+								<h5><a href="#">教育行业</a></h5>
+								<li><a class="link_a" href="#">码道云课堂在线编程学习平台</a></li>
+								<li><a class="link_a" href="#">中国科大研究生招生移动信息化解决方案</a></li>
+								<li><a class="link_a" href="#">adidas夏令营招生推广系统</a></li>
+								<li><a class="link_a" href="#">唐仲奖学金交流会平台</a></li>
+								<li><a class="link_a" href="#">中国科大大学生骨干培训在线教育系统</a></li>
+								<li><a class="link_a" href="#">中国科大"两学一做"学习平台</a></li>
+								<li><a class="link_a" href="#">中国科大先进班集体、项目评优系统</a></li>
+							</ul>
+							<ul class="lf border_r">
+								<h5><a href="#">人力资源行业</a></h5>
+								<li><a class="link_a" href="#">皖信人力资源派遣服务ERP系统</a></li>
+								<li><a class="link_a" href="#">沃尔网（服务于中小企业的电子商务平台）</a></li>
+								<li><a class="link_a" href="#">好工匠智能用工平台</a></li>
+								<h5><a href="#">大数据</a></h5>
+								<li><a class="link_a" href="#">揽众大数据平台</a></li>
+								<h5><a href="#">交通行业</a></h5>
+								<li><a class="link_a" href="#">中安停留智能停车系统</a></li>
+							</ul>
+							<ul class="lf">
+								<h5><a href="#">医疗行业</a></h5>
+								<li><a class="link_a" href="#">行业医院在线预约挂号系统</a></li>
+								<li><a class="link_a" href="#">儿童医院就医指南系统</a></li>
+								<li><a class="link_a" href="#">儿童医院移动医疗信息化系统</a></li>
+								<h5><a href="#">通信和智能硬件行业</a></h5>
+								<li><a class="link_a" href="#">上海海积架宝科目三APP平台</a></li>
+								<li><a class="link_a" href="#">智能按摩仪系统</a></li>
+								<h5><a href="#">O2O行业</a></h5>
+								<li><a class="link_a" href="#">易修来了</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="lf list"><a class="list_b" href="about.html">关于我们</a></li>
+					<li class="lf list"><a class="list_b" href="hesuan.html">核算报价</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="labor">
+			<div class="labor_con w1200">
+				<div class="labor_title">
+					<h2>PRODUCTS    <span>INTRODUCTION</span></h2>
+					<h3>瀚云劳务派遣管理系统概述</h3>
+				</div>
+				<p>
+					云人才服务系统，采用B/S系统架构，较好的实现了互联网办公，系统结合多种算法模型，帮助企业评价客户价值，做出合理决策。系统功能主要涵盖：客户管理、派单管理、人事档案管理、工资管理、结算管理、财务管理、开票管理、共享平台和系统设置等功能，从潜在的客户发展目标开始，到如何发展为正式服务客户，再到正式客户享受中的员工档案管理与变更、社保、公积金代理管理、享受福利代理、工资发放等服务，再到与客户对接结算、财务和开票等服务，最后到合作客户的停止服务，系统贯穿于客户单位的整个服务周期，有效地满足客户对人力资源管理自于各企业和组织的人力资源管理领域。<br/>
+					系统的研发及应用，将从业务及操作两方面对企业人力资源外包管理工作形成了有效支持，在管理中帮助企业准确识别对公司价值贡献度高的客户，实现客户公司的利润最大化和公司可持续发展，将人力资源外包管理工作切实转化为企业战略管理的组成部分，实现企业的长远发展及利润的稳步增长。
+				</p>
+			</div>
+		</div>
+		<div class="application">
+			<div class="w1200 clearfix">
+				<div class="labor_title">
+					<h3>应用模块介绍</h3>
+				</div>
+					<div class="service_con clearfix">
+						<div class="row_one clearfix">
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/kh.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>客户管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/pd.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>派单管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/fp.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>发票管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/gz.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>工资管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/df.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>垫付管理</h4>
+									</dd>
+								</dl>
+							</a>
+						</div>
+						<div class="clearfix">
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/cw.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>财务管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/rs.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>人事管理</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/gz.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>工作提醒</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/tj.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>统计分析</h4>
+									</dd>
+								</dl>
+							</a>
+							<a class="small_link lf" href="#">
+								<dl>
+									<dt><img src="images/gx.jpg"></dt>
+									<dd class="photo_destails">
+										<h4>共享平台</h4>
+									</dd>
+								</dl>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="application_table">
+			<div class="w85">
+				<table>
+					<thead>
+						<tr>
+							<th>模块</th>
+							<th>一级分类</th>
+							<th>二级分类</th>
+							<th>标准版</th>
+							<th>定制版</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>价格</td>
+							<td></td>
+							<td>-</td>
+							<td id="n_color">150000RMB</td>
+							<td id="n_color">300000RMB</td>
+						</tr>
+						<tr>
+							<td rowspan="3">产品授权</td>
+							<td>产品商业授权一份</td>
+							<td>-</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>安装光盘</td>
+							<td>-</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>源代码</td>
+							<td>-</td>
+							<td><img src="images/cuode.jpg"></td>
+							<td><img src="images/cuode.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="4">产品服务</td>
+							<td>服务器架构</td>
+							<td>-</td>
+							<td colspan="2">提供安全的云部署方案或私服务器部署方案</td>
+						</tr>
+						<tr>
+							<td>服务年限</td>
+							<td>-</td>
+							<td>半年</td>
+							<td>1年</td>
+						</tr>
+						<tr>
+							<td>服务站点</td>
+							<td>-</td>
+							<td>1个</td>
+							<td>1个</td>
+						</tr>
+						<tr>
+							<td>二次开发</td>
+							<td>-</td>
+							<td><img src="images/cuode.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="61">功能模块</td>
+							<td rowspan="6">客户管理</td>
+							<td>潜在客户管理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客户拜访记录</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客户档案管理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>新客户审核</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客户信息查看</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客户分配客服</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="10">派单管理</td>
+							<td>社保派单</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>公积金派单</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>商险派单</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>导出花名册（社保）</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>导出满册（公积金）</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>社保办理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>公积金办理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>社保、公积金享受办理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>商险享受办理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>商险办理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="4">发票管理</td>
+							<td>开票申请</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>开票审核</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>发票作废</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>发票寄送管理</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="6">工资管理</td>
+							<td>工资表导入</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工资表审核</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客户/财务结算单生成</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>结算单打印和导出</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工资条生成（个人）</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工资发放（银行）</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="3">工资表审核</td>
+							<td>垫付申请</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>垫付审核</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>垫付查询</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="4">财务管理</td>
+							<td>财务出账</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>财务入账</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>进账认领</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工资发放</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="4">人事管理</td>
+							<td>在职员工</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>离职员工</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>员工入职</td>
+							<td><img src="images/duide.jpg"></td>
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>员工档案管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="7">工作提醒</td>
+							<td>业务合同到期提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>劳动合同到期提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>商险到期提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>员工离开退休提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工伤处理提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>约定到款未到期提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>执行还款到期提醒</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="6">统计分析</td>
+							<td>客户统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>客服服务统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>开票统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>垫付统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>信誉度统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>差余额统计</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="2">共享平台</td>
+							<td>信息共享</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>文档共享</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="9">系统管理</td>
+							<td>权限管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>用户管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>角色管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>基数管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>数据字典</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>区域管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>流程管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>工资条字段管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>日记管理</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="3">培训服务</td>
+							<td>一般用户培训</td>
+							<td>-</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>管理员培训</td>
+							<td>-</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>二次开发培训</td>
+							<td>-</td>
+							<td><img src="images/cuode.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="2">咨询服务</td>
+							<td>产品迭代咨询</td>
+							<td>-</td>
+							<td><img src="images/cuode.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>产品优化咨询</td>
+							<td>-</td>
+							<td><img src="images/cuode.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td rowspan="4">维护服务</td>
+							<td>产品bug反馈与响应</td>
+							<td>-</td>
+							<td>等待标准程序包</td> 
+							<td>单独程序包</td>
+						</tr>
+						<tr>
+							<td>系统运行故障排查</td>
+							<td>-</td>
+							<td><img src="images/duide.jpg"></td> 
+							<td><img src="images/duide.jpg"></td>
+						</tr>
+						<tr>
+							<td>数据迁移</td>
+							<td>-</td>
+							<td>1次</td> 
+							<td>3次</td>
+						</tr>
+						<tr>
+							<td>系统程序迁移</td>
+							<td>-</td>
+							<td>1次</td> 
+							<td>3次</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_ul w1200 clearfix">
+				<div class="lf ewm">
+					<img src="images/ewm.jpg">
+					<p>微信公众号</p>
+				</div>
+				<ul class="end_ul clearfix lf">
+					<h3>我们的信息</h3>
+					<li>官方咨询热线：0551-63648878</li>
+					<li>邮箱：xyxu@hiyuntek.com</li>
+					<li>地址：安徽合肥高新区软件园2#105</li>
+				</ul>
+				<ul class="lf solo_destails">
+					<h3>联系我们</h3>
+					<li>
+						<input type="text" name="" placeholder="您的姓名">
+					</li>
+					<li>
+						<input type="text" name="" placeholder="电话号码">
+					</li>
+					<li class="clearfix">
+						<textarea class="textarea3 lf" type="text" name="" placeholder="您的需求简述"></textarea>
+						<button class="lf">提交</button>
+					</li>
+				</ul>
+				<div class="end">
+					<h6>Copyright 2014-2017 www.hiyuntek.com All Right Reserved 版权所有：合肥中科瀚云信息科技有限公司</h6>
+					<h6>皖备21029602000048号</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+		$(".list1").hover(function(){
+			$(this).children(".list_a").addClass("list_active");
+			$(this).children(".list_son").show();
+		},function(){
+			$(this).children(".list_a").removeClass("list_active");
+			$(this).children(".list_son").hide();
+		});
+</script>	
+</body>
+</html>
