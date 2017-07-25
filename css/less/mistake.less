@@ -1,0 +1,226 @@
+#mistake {
+    @media (min-width: 769px) {
+        margin-top: 100px;
+        h4 {
+            text-align: center;
+        }
+        select {
+            display: block;
+            margin: 10px auto;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border-color: #54C3E1;
+            color: #54C3E1;
+            font-size: 16px;
+            letter-spacing: 2px;
+            padding: 0 5px;
+        }
+        .exam {
+            .user_exam {
+                .exam_subject {
+                    position: relative;
+                    .finshed {
+                        width: 65px;
+                        height: 30px;
+                        line-height: 26px;
+                        font-size: 20px;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        color: #E23536;
+                        border: 2px solid #E23536;
+                        transform: rotate(-30deg);
+                        position: absolute;
+                        left: 50px;
+                        top: 90px;
+                    }
+                }
+                .exam_img {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                .options {
+                    li {
+                        // margin: 5px 0;
+                        padding: 10px 5px;
+                        cursor: pointer;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        &:hover,
+                        &.checked {
+                            color: #EFA346;
+                            span {
+                                border-color: #EFA346;
+                            }
+                        }
+                        &.right {
+                            color: green;
+                            span {
+                                border-color: green;
+                                color: white;
+                                background-color: green;
+                            }
+                        }
+                        &.wrong {
+                            color: red;
+                            span {
+                                border-color: red;
+                                color: white;
+                                background-color: red;
+                            }
+                        }
+                        span {
+                            margin-right: 5px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                            text-align: center;
+                            line-height: 20px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .tollbar {
+            width: 100%;
+            margin: 20px auto;
+            z-index: 999;
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            padding: 5px 0;
+            .btn_ft {
+                background-color: #ED9324;
+                width: 80px;
+                border-style: none;
+                font-size: 16px;
+                letter-spacing: 3px;
+                &:active,
+                &:hover,
+                &:focus {
+                    background-color: #ED9324;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 60px;
+        h4 {
+            text-align: center;
+        }
+        select {
+            display: block;
+            margin: 10px auto;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border-color: #54C3E1;
+            color: #54C3E1;
+            font-size: 16px;
+            letter-spacing: 2px;
+            padding: 0 5px;
+        }
+        .exam {
+            .user_exam {
+                .exam_subject {
+                    position: relative;
+                    .finshed {
+                        width: 65px;
+                        height: 30px;
+                        line-height: 26px;
+                        font-size: 20px;
+                        text-align: center;
+                        letter-spacing: 5px;
+                        color: #E23536;
+                        border: 2px solid #E23536;
+                        transform: rotate(-30deg);
+                        position: absolute;
+                        right: 10px;
+                        top: 90px;
+                    }
+                }
+                .exam_img {}
+                .options {
+                    li {
+                        // margin: 5px 0;
+                        padding: 10px 5px;
+                        cursor: pointer;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        border-bottom: 1px solid #ccc;
+                        &:nth-child(1) {
+                            border-top: 1px solid #ccc;
+                        }
+                        &:hover,
+                        &.checked {
+                            color: #EFA346;
+                            span {
+                                border-color: #EFA346;
+                            }
+                        }
+                        &.right {
+                            color: green;
+                            span {
+                                border-color: green;
+                                color: white;
+                                background-color: green;
+                            }
+                        }
+                        &.wrong {
+                            color: red;
+                            span {
+                                border-color: red;
+                                color: white;
+                                background-color: red;
+                            }
+                        }
+                        span {
+                            margin-right: 5px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                            text-align: center;
+                            line-height: 20px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .tollbar {
+            width: 100%;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            padding: 5px 0;
+            .btn_ft {
+                background-color: #ED9324;
+                width: 80px;
+                border-style: none;
+                font-size: 16px;
+                letter-spacing: 3px;
+                &:active,
+                &:hover,
+                &:focus {
+                    background-color: #ED9324;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

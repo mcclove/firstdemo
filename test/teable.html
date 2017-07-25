@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../plugins/jquery/jquery-min.js"></script>
+</head>
+
+<body>
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>04.25-04.25</th>
+                <th>04.25-04.25</th>
+                <th>04.25-04.25</th>
+                <th>04.25-04.25</th>
+                <th>04.25-04.25</th>
+            </tr>
+        </thead>
+    </table>
+    <script>
+    // 判断头部相同时间并合并
+    $('th').each(function() {
+        var tharr = [];
+        tharr = $(this).html().split('-');
+        console.log(tharr);
+        if (tharr[0] == tharr[1]) {
+            $(this).html(tharr[0])
+        }
+        else{
+        	return;
+        }
+
+    })
+    </script>
+</body>
+
+</html>

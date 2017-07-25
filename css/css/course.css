@@ -1,0 +1,450 @@
+#ft_course .content .container .tab_head ul li {
+  float: left;
+  height: 40px;
+  margin-left: 10px;
+  line-height: 40px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 10px;
+}
+#ft_course .content .container .tab_head .tab_nav ul {
+  zoom: 1;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  #ft_course .content .container .tab_head .tab_nav ul {
+    display: none;
+  }
+}
+#ft_course .content .container .tab_head .tab_nav .style {
+  border-top: 1px solid #D0D0D0;
+}
+#ft_course .content .container .course_center .list {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  height: 110px;
+  border-bottom: 1px solid #ddd;
+}
+#ft_course .content .container .course_center .list .list_left {
+  padding: 0;
+  background-color: #CFCDED;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 90px;
+  text-align: center;
+}
+#ft_course .content .container .course_center .list .list_left .season {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: block;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: red;
+  background: rgba(255, 255, 255, 0.5);
+}
+#ft_course .content .container .course_center .list .list_left .iconfont {
+  font-size: 40px;
+  margin-top: 10px;
+  color: white;
+}
+#ft_course .content .container .course_center .list .list_left h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  letter-spacing: 1px;
+}
+#ft_course .content .container .course_center .list .list_left.chem {
+  background-color: rgba(121, 105, 174, 0.5);
+}
+#ft_course .content .container .course_center .list .list_left.phy {
+  background-color: rgba(160, 129, 152, 0.5);
+}
+#ft_course .content .container .course_center .list .list_left.math {
+  background-color: rgba(98, 149, 164, 0.5);
+}
+#ft_course .content .container .course_center .list .list_right {
+  padding: 0;
+  padding-left: 10px;
+}
+#ft_course .content .container .course_center .list .list_right h2 {
+  margin-top: 0;
+  font-size: 16px;
+  text-align: left;
+}
+#ft_course .content .container .course_center .list .list_right ul li {
+  float: left;
+  margin-right: 5px;
+  line-height: 20px;
+  font-size: 12px;
+}
+#ft_course .content .container .course_center .list .list_right ul li i {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #000;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#ft_course .content .container .course_center .list .list_right p {
+  font-size: 12px;
+  margin: 5px;
+}
+#ft_course .content .container .course_center .list .list_right .price {
+  font-size: 12px;
+}
+#ft_course .content .container .course_center .list .list_right .status {
+  float: right;
+  margin-right: 15px;
+}
+#ft_course .content .container .course_center .list .list_right .status.full {
+  color: #bebebe;
+}
+#ft_course .content .container .course_center .list .list_right .status.danger {
+  color: #EF0602;
+}
+#ft_course .content .container .course_center .list .list_right .status.hot {
+  color: #F7941D;
+}
+#ft_course .content .container #course_end {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  #ft_course .content {
+    margin-top: 100px;
+  }
+  #ft_course .content .container .tab_head .yx {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    top: 50px;
+    left: 0;
+    background-color: #AFAFAF;
+    z-index: 99;
+  }
+  #ft_course .content .container .tab_head .yx .container {
+    height: 50px;
+  }
+  #ft_course .content .container .tab_head .yx .container span {
+    margin-left: 15px;
+    text-align: center;
+    display: block;
+    width: 80px;
+    height: 100%;
+    float: left;
+  }
+  #ft_course .content .container .tab_head .yx .container ul {
+    margin-left: 105px;
+    height: 50px;
+    line-height: 50px;
+  }
+  #ft_course .content .container .tab_head .yx .container ul li.current {
+    width: 100px;
+    height: 28px;
+    margin-top: 11px;
+    line-height: 28px;
+    background-color: #29C2E1;
+    color: white;
+    margin-left: 15px;
+    padding: 0 20px;
+  }
+  #ft_course .content .container .tab_head .tab_nav .list {
+    padding: 5px 15px;
+  }
+  #ft_course .content .container .tab_head .tab_nav .list span {
+    text-align: center;
+    display: block;
+    width: 80px;
+    height: 100%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+  }
+  #ft_course .content .container .tab_head .tab_nav .list ul {
+    margin-left: 90px;
+  }
+  #ft_course .content .container .tab_head .tab_nav .list ul li {
+    width: 100px;
+    text-align: center;
+    height: 28px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    background-color: #fff;
+    color: black;
+    margin-left: 15px;
+    padding: 0;
+  }
+  #ft_course .content .container .tab_head .tab_nav .list ul li.current {
+    background-color: #29C2E1;
+    color: white;
+  }
+  #ft_course .content .container .course_center {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #ft_course .content .container .course_center .list {
+    height: 150px;
+    overflow: hidden;
+  }
+  #ft_course .content .container .course_center .list .list_left {
+    height: 120px;
+    background-color: #B2E8F4;
+  }
+  #ft_course .content .container .course_center .list .list_left h3 {
+    margin-top: 18px;
+  }
+  #ft_course .content .container .course_center .list .list_left .season {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  #ft_course .content .container .course_center .list .list_left .glyphicon {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  #ft_course .content .container .course_center .list .list_right {
+    padding-left: 50px;
+  }
+  #ft_course .content .container .course_center .list .list_right h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #ft_course .content .container .course_center .list .list_right ul {
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  #ft_course .content .container .course_center .list .list_right ul li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 5px;
+  }
+  #ft_course .content .container .course_center .list .list_right p {
+    margin: 10px 0;
+  }
+  #ft_course .content .container .course_center .list .list_right .pullright .status {
+    float: none;
+    margin-left: 180px;
+    font-size: 24px;
+  }
+  #ft_course .content .container .course_center .list .col-sm-3 {
+    height: 120px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #ft_course .content .container .course_center .list .col-sm-3 .num {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #D5D5D5;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  #ft_course .content .container .course_center .list .col-sm-3 .num span {
+    font-family: ftFont;
+    font-size: 40px;
+  }
+  #ft_course .content .container .course_center .list .col-sm-3 .btn_ft {
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #ft_course {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e4376), to(#2b5876));
+    background: -webkit-linear-gradient(#4e4376, #2b5876);
+    background: -o-linear-gradient(#4e4376, #2b5876);
+    background: linear-gradient(#4e4376, #2b5876);
+  }
+  #ft_course .content .container {
+    padding: 0;
+  }
+  #ft_course .content .container .tab_head {
+    height: 18vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #ft_course .content .container .tab_head h2 {
+    font-size: 26px;
+    padding-left: 20px;
+    letter-spacing: 5px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    width: 70%;
+    padding: 10px 0 20px;
+    margin: 10px auto;
+    border-bottom: 1px solid #A398B4;
+  }
+  #ft_course .content .container .tab_nav {
+    height: 34px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #ft_course .content .container .tab_nav > div {
+    border: none;
+  }
+  #ft_course .content .container .tab_nav .list {
+    width: 22%;
+    padding: 0;
+    border: none;
+    background-color: #373C61;
+    color: white;
+    border-radius: 5px;
+    z-index: 99;
+  }
+  #ft_course .content .container .tab_nav .list ul {
+    display: none;
+    position: fixed;
+    top: 18vh;
+    left: 3%;
+    width: 94%;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  #ft_course .content .container .tab_nav .list ul li {
+    margin-left: 0;
+    background-color: rgba(21, 40, 55, 0.9);
+    color: white;
+  }
+  #ft_course .content .container .tab_nav .list ul li.current {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #313131;
+  }
+  #ft_course .content .container .tab_nav .list > span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  #ft_course .content .container .tab_nav .list > span.current {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #313131;
+  }
+  #ft_course .content .container .tab_nav .area ul li,
+  #ft_course .content .container .tab_nav .sort ul li,
+  #ft_course .content .container .tab_nav .subject ul li {
+    width: 100%;
+    float: none;
+    border-bottom: 1px solid #afafaf;
+  }
+  #ft_course .content .container .tab_nav .area ul li:nth-last-child(1),
+  #ft_course .content .container .tab_nav .sort ul li:nth-last-child(1),
+  #ft_course .content .container .tab_nav .subject ul li:nth-last-child(1) {
+    border-bottom: none;
+  }
+  #ft_course .content .container .tab_nav .grad li {
+    width: 33.3%;
+    border-bottom: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+  }
+  #ft_course .content .container .tab_nav .grad li:nth-child(3n+0) {
+    border-right: none;
+  }
+  #ft_course .content .container .tab_nav .grad li:nth-child(n+10) {
+    border-bottom: none;
+  }
+  #ft_course .content .container .tab_nav .sort {
+    border: none;
+  }
+  #ft_course .content .container .course_center {
+    padding: 5px 10px;
+    height: 81vh;
+    overflow-y: scroll;
+  }
+  #ft_course .content .container .course_center .list {
+    overflow: hidden;
+    border-bottom: 1px solid #636F8C;
+  }
+  #ft_course .content .container .course_center .list_right {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #ft_course .content .container .course_center .list_right h2 {
+    width: 100%;
+    color: #ffffff;
+    white-space: nowrap;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: 1px;
+  }
+  #ft_course .content .container .course_center .list_right .time {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #ft_course .content .container .course_center .list_right ul li i {
+    color: white;
+    background-color: white !important;
+  }
+}

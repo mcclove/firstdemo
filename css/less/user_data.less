@@ -1,0 +1,212 @@
+.data {
+    height: 100%;
+    footer{
+        //position: fixed;
+    }
+}
+@media (max-width: 768px) {
+    body{
+       background: #4e4376; 
+    }
+}
+#user_data {
+    
+    @media (min-width: 769px) {
+        margin-top: 50px;
+        padding: 20px;
+        .btn.btn-warning{
+            width: 10%;
+            border-radius: 20px;
+            padding: 1px 10px;
+        }
+        .container {
+            //padding: 30px 0;
+        }
+        .content {
+            padding-left: 20%;
+            .data_nav {
+                display: flex;
+                justify-content: space-around;
+                li {
+                    //background: #DBDCE5;
+                    color: #000;
+                    width: 150px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    &:hover{
+                        background: #E6E6E6;
+                    }
+                    &.checked {
+                        background-color: #EC9324;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .data_content {
+            padding: 40px 0;
+            .user_count {
+                #resultdiv {
+                    a {
+                        margin-top: -12px;
+                    }
+                }
+                button {
+                    margin-left: 130px;
+                }
+                .form-group {
+                    height: 40px;
+                }
+            }
+            .user_profile {
+                .form-group {
+                    height: 150px;
+                    &:nth-child(1) {
+                        height: 40px;
+                    }
+                }
+            }
+            .user_photo {
+                .portrait {
+                    background-color: #fff;
+                    margin: 20px;
+                    padding: 20px;
+                }
+            }
+        }
+        .data_content{
+            .user_photo{
+                margin-top: 20px;
+                #fileupload{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .showhdpic{
+                    text-align: center;line-height: 120px;
+                }
+                .imgcontent{
+                    margin:0 auto;
+                    width: 120px;height: 120px;border: 1px dashed #000;border-radius: 50%;
+                }
+                #preview{
+                    display: none;width: 120px;height: 120px;border-radius: 50%;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        
+        height: 100%;
+        .phonebtn{
+            padding: 5px 20px;
+            height: auto;
+            line-height: 100%;
+            //width: 30%;
+        }
+        h4 {
+                width: 80%;
+                margin: 10px auto;
+                border-bottom: 1px solid #ACA3BD;
+                padding: 10px 0 20px;
+                padding-left: 15px;
+                text-align: center;
+                color: white;
+                letter-spacing: 5px;
+                font-weight: 400;
+                font-size: 22px;
+        }
+        .user_info {
+            display: none;
+        }
+        .content {
+            .data_nav {
+                display: flex;
+                justify-content: space-around;
+                li {
+                    background: #3E3C63;
+                    color: #fff;
+                    width: 30%;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    &.checked {
+                        background-color: #DBDCE5;
+                        color: #333;
+                    }
+                }
+            }
+        }
+        .user_count {
+            .form-group {
+                margin-top: 15px;
+                display: flex;
+                label {
+                    flex: 1;
+                    color: white;
+                    font-weight: normal;
+                    line-height: 34px;
+                        padding-left: 20px;
+                }
+                button {
+                    margin: 20px auto;
+                }
+            }
+            #resultdiv {
+                .close {
+                    margin-top: -12px;
+                }
+            }
+        }
+        .user_profile {
+            .form-group {
+                margin-top: 15px;
+                display: flex;
+                label {
+                    color: white;
+                    font-weight: normal;
+                    flex:1;
+                    line-height: 34px;
+                        padding-left: 20px;
+                }
+                button {
+                    margin: 20px auto;
+                }
+            }
+        }
+        .data_content{
+            .user_photo{
+                margin-top: 20px;
+                color:#fff;
+                #fileupload{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .showhdpic{
+                    text-align: center;line-height: 120px;
+                }
+                .imgcontent{
+                    margin:0 auto;
+                    width: 120px;height: 120px;border: 1px dashed #fff;border-radius: 50%;
+                }
+                #preview{
+                    display: none;width: 120px;height: 120px;border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 768px) {
+    #user_data{
+        .user_count{
+            .form-group{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}

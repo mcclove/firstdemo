@@ -1,0 +1,89 @@
+
+@font-face {font-family: "iconfont";
+  src: url('./ft_icon/iconfont.eot?t=1499157500458'); /* IE9*/
+  src: url('./ft_icon/iconfont.eot?t=1499157500458#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./ft_icon/iconfont.woff?t=1499157500458') format('woff'), /* chrome, firefox */
+  url('./ft_icon/iconfont.ttf?t=1499157500458') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./ft_icon/iconfont.svg?t=1499157500458#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ft-down:before { content: "\e6b7"; }
+
+.ft-weixin:before { content: "\e64b"; }
+
+.ft-zhifubao:before { content: "\e601"; }
+
+.ft-wchat:before { content: "\e600"; }
+
+.ft-guanbi1:before { content: "\e723"; }
+
+.ft-xuanze:before { content: "\e72e"; }
+
+.ft-mail:before { content: "\e60e"; }
+
+.ft-back:before { content: "\e602"; }
+
+.ft-alipay:before { content: "\e6b0"; }
+
+.ft-mbphone:before { content: "\e70f"; }
+
+.ft-right:before { content: "\e609"; }
+
+.ft-home:before { content: "\e60a"; }
+
+.ft-course:before { content: "\e60b"; }
+
+.ft-sid1:before { content: "\e60f"; }
+
+.ft-sid4:before { content: "\e610"; }
+
+.ft-sid3:before { content: "\e611"; }
+
+.ft-menu:before { content: "\e612"; }
+
+.ft-quoteicon:before { content: "\e613"; }
+
+.ft-quoteicon1:before { content: "\e616"; }
+
+.ft-search:before { content: "\e614"; }
+
+.ft-phone:before { content: "\e615"; }
+
+.ft-bbs:before { content: "\e617"; }
+
+.ft-center:before { content: "\e618"; }
+
+.ft-about:before { content: "\e619"; }
+
+.ft-left:before { content: "\e61a"; }
+
+.ft-logo:before { content: "\e627"; }
+
+.ft-up:before { content: "\e6f2"; }
+
+.ft-wodekecheng:before { content: "\e61b"; }
+
+.ft-tiantianlian:before { content: "\e61c"; }
+
+.ft-cuotiben:before { content: "\e61d"; }
+
+.ft-jichuziliao:before { content: "\e61e"; }
+
+.ft-summer:before { content: "\e61f"; }
+
+.ft-autumn:before { content: "\e620"; }
+
+.ft-spring:before { content: "\e621"; }
+
+.ft-winter:before { content: "\e622"; }
+
+.ft-other-copy:before { content: "\e623"; }
+

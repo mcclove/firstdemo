@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Flare Video Demo</title>
+    <link rel="stylesheet" href="stylesheets/flarevideo.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/flarevideo.default.css" type="text/css">
+    <script src="javascripts/jquery.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.ui.slider.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.flash.js" type="text/javascript"></script>
+    <script src="javascripts/flarevideo.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+    jQuery(function($) {
+        fv = $("#video").flareVideo({autoplay:'true'});
+        fv.load([{
+            src: '../../video/test1.mp4',
+            type: 'video/mp4'
+        }]);
+       
+
+
+    })
+    </script>
+    <style type="text/css" media="screen">
+    body {
+        background: #27282C url(images/bg.png) repeat;
+    }
+    
+    #video {
+        -webkit-box-shadow: 0 0 20px #000;
+        -moz-box-shadow: 0 0 20px #000;
+        width: 900px;
+        height: 500px;
+        overflow: none;
+        margin: 5% auto;
+    }
+    </style>
+    <link href="http://www.jqueryscript.net/css/top.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="menu">
+        <div class="w">
+            <a href="http://www.jqueryscript.net/other/HTML5-Flash-Video-Player-FlareVideo.html">Download</a> - <a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></div>
+    </div>
+    <div id="video"></div>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+
+</html>

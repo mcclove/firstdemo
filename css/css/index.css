@@ -1,0 +1,1000 @@
+#homepage {
+  width: 100%;
+}
+#homepage .fp-tableCell {
+  /* height: calc( 100vh - 40px)!important; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#homepage .fp-tableCell .container {
+  height: 100%;
+}
+#homepage .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#homepage .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+#homepage .swiper-container .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
+#homepage .swiper-container .swiper-pagination span {
+  margin: 20px;
+}
+#homepage .course .num {
+  margin: 0 10px;
+  font-size: 50px;
+  font-family: ftFont;
+  color: #F7941D;
+}
+#homepage .course .course_head ul {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#homepage .course .course_head ul li {
+  text-align: center;
+}
+#homepage .course .course_head ul li span {
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: #ED9324;
+  color: white;
+  margin-bottom: 25px;
+}
+#homepage .course .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#homepage .course .content .list {
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  margin: 0;
+}
+#homepage .course .content .list .statu.hot {
+  background-color: rgba(158, 130, 221, 0.5);
+}
+#homepage .course .content .list .statu.danger {
+  background-color: rgba(255, 29, 22, 0.5);
+}
+#homepage .course .content .list .statu.full {
+  background-color: rgba(116, 116, 116, 0.5);
+}
+#homepage .teacher .container {
+  overflow: hidden;
+}
+@media (min-width: 769px) {
+  #homepage .course {
+    background-color: #E7EFEF;
+  }
+  #homepage .course .course_head {
+    padding-top: 60px;
+    width: 100%;
+    height: 40vh;
+  }
+  #homepage .course .course_head .course_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .course .content {
+    height: 60vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage .course .content .list {
+    height: 50vh;
+    width: 28%;
+    text-align: center;
+    position: relative;
+  }
+  #homepage .course .content .list h3,
+  #homepage .course .content .list h4 {
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  #homepage .course .content .list .statu {
+    text-decoration: none;
+    position: absolute;
+    left: -26px;
+    top: 14px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 100px;
+    height: 24px;
+    background-color: #ED9324;
+    color: white;
+    line-height: 24px;
+  }
+  #homepage .course .content .list .video {
+    width: 65%;
+    height: 25%;
+    -webkit-box-shadow: 2px 2px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  #homepage .course .content .list .video span {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 100%;
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 5px #888888;
+    box-shadow: 0px 0px 5px #888888;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 50%;
+    color: #8CD8EB;
+  }
+  #homepage .course .content .btn_ft {
+    padding: 6px 10px;
+    margin-top: 10px;
+    line-height: 1;
+    border-color: transparent;
+  }
+  #homepage .course .content .btn_ft:active,
+  #homepage .course .content .btn_ft:hover,
+  #homepage .course .content .btn_ft:focus {
+    outline: none;
+    background-color: #F79B38;
+    color: white;
+  }
+  #homepage .course .bottom {
+    display: none;
+  }
+  #homepage .teacher {
+    width: 100%;
+    background-color: #E7EFEF;
+  }
+  #homepage .teacher .course_head {
+    height: 20vh;
+    padding-top: 60px;
+  }
+  #homepage .teacher .course_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .teacher .teacher_list {
+    height: 78vh;
+    position: relative;
+  }
+  #homepage .teacher .teacher_list .img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+  }
+  #homepage .teacher .teacher_list .img .message {
+    height: 10vh;
+    width: 60%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: #55C2E1;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  #homepage .teacher .teacher_list .img .message h3 {
+    margin: 5px 0;
+  }
+  #homepage .teacher .teacher_list .img .message span {
+    color: white;
+    letter-spacing: 2px;
+  }
+  #homepage .teacher .teacher_list .introduce {
+    height: 30vh;
+    padding: 8vh 10px 10px;
+    background-color: #fff;
+    text-indent: 26px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .teacher .bottom {
+    display: none;
+  }
+  #homepage .about {
+    background-color: #E5EFF0;
+    padding-top: 50px;
+  }
+  #homepage .about .aboutme {
+    height: 35vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .aboutme .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .aboutme p {
+    padding-left: 15px;
+    text-indent: 28px;
+  }
+  #homepage .about .aboutme ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #homepage .about .aboutme ul li {
+    width: 17vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 30px;
+  }
+  #homepage .about .aboutme ul li img {
+    width: 17vh;
+  }
+  #homepage .about .wedo {
+    height: 56vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content {
+    height: 40vh;
+    text-align: right;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content .right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .about .wedo .content .right p {
+    padding: 20px 30px;
+    text-indent: 28px;
+    text-align: left;
+  }
+  #homepage .about .wedo .btn_ft {
+    padding: 6px;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  #homepage .about .wedo .btn_ft:active,
+  #homepage .about .wedo .btn_ft:hover,
+  #homepage .about .wedo .btn_ft:focus {
+    outline: none;
+    background-color: #F79B38;
+    color: white;
+  }
+  #homepage .location {
+    background-color: #E5EFF0;
+  }
+  #homepage .location .course_head {
+    height: 25vh;
+    padding-top: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage .location .col-sm-6 {
+    height: 75vh;
+  }
+  #homepage .location .area_detail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage .location dl {
+    padding-left: 30px;
+  }
+  #homepage .location dl dt {
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+  }
+  #homepage .location dl dd {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  #homepage .location dl dd a {
+    display: inherit;
+    margin-left: 10px;
+  }
+  #homepage .location dl dd a span {
+    color: orange;
+    margin-right: 5px;
+    margin-top: -2px;
+    -webkit-transform: rotate(260deg);
+    -ms-transform: rotate(260deg);
+    transform: rotate(260deg);
+  }
+}
+@media (max-width: 768px) {
+  #homepage section {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e4376), to(#2b5876));
+    background: -webkit-linear-gradient(#4e4376, #2b5876);
+    background: -o-linear-gradient(#4e4376, #2b5876);
+    background: linear-gradient(#4e4376, #2b5876);
+    overflow: hidden;
+  }
+  #homepage section.course .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  #homepage section.course .course_head {
+    width: 100%;
+    height: 20vh;
+  }
+  #homepage section.course .course_head h2 {
+    font-size: 26px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color: white;
+  }
+  #homepage section.course .course_head ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.course .course_head ul li {
+    text-align: center;
+    color: white;
+    width: 16%;
+    background-color: rgba(21, 40, 55, 0.3);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 8px 0px;
+    border-radius: 5px;
+  }
+  #homepage section.course .course_head ul li a {
+    color: white;
+  }
+  #homepage section.course .course_head ul li span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 50%;
+    background-color: #ED9324;
+    margin-bottom: 15px;
+  }
+  #homepage section.course .content {
+    padding: 0 15px;
+    height: 70vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+  }
+  #homepage section.course .content .list {
+    width: 45%;
+    height: 26vh;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.course .content .list .statu {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 24px;
+    background-color: #ED9324;
+    color: white;
+    line-height: 24px;
+    border-radius: 0 12px 12px 0;
+    padding-right: 8px;
+  }
+  #homepage section.course .content .list.math {
+    background-color: rgba(98, 149, 164, 0.5);
+  }
+  #homepage section.course .content .list.phy {
+    background-color: rgba(160, 129, 152, 0.5);
+  }
+  #homepage section.course .content .list.chem {
+    background-color: rgba(121, 105, 174, 0.5);
+  }
+  #homepage section.course .content .list span.ico {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  #homepage section.course .content .list h4 {
+    margin-top: 10px;
+  }
+  #homepage section.course .content .list h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  #homepage section.course .content .list p {
+    color: #ED9324;
+  }
+  #homepage section.course .content .list p .num {
+    font-size: 40px;
+    color: #fff;
+  }
+  #homepage section.course .bottom {
+    height: 10vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  #homepage section.course .bottom .btn_ft {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #879AAA;
+    background-color: transparent;
+  }
+  #homepage section.course .bottom .btn_ft:active,
+  #homepage section.course .bottom .btn_ft:hover,
+  #homepage section.course .bottom .btn_ft:focus {
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  #homepage section.teacher .container {
+    text-align: center;
+    padding: 0;
+  }
+  #homepage section.teacher .container .course_head {
+    height: 15vh;
+    padding-top: 0px;
+    text-align: left;
+  }
+  #homepage section.teacher .container .course_head h2 {
+    font-size: 26px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color: white;
+  }
+  #homepage section.teacher .container .teacher_list {
+    height: 70vh;
+    position: relative;
+    padding: 0 15px;
+  }
+  #homepage section.teacher .container .teacher_list .img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  #homepage section.teacher .container .teacher_list .img .message {
+    height: 10vh;
+    width: 50%;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  #homepage section.teacher .container .teacher_list .img .message h3 {
+    margin: 5px 0;
+  }
+  #homepage section.teacher .container .teacher_list .img .message span {
+    letter-spacing: 2px;
+  }
+  #homepage section.teacher .container .teacher_list .introduce {
+    margin-top: 9vh;
+    padding: 0 10px;
+    text-indent: 26px;
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+  #homepage section.teacher .container .bottom {
+    height: 15vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  #homepage section.teacher .container .bottom .btn_ft {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    border: 1px solid #879AAA;
+    letter-spacing: 2px;
+    background-color: transparent;
+  }
+  #homepage section.teacher .container .bottom .btn_ft:active,
+  #homepage section.teacher .container .bottom .btn_ft:hover,
+  #homepage section.teacher .container .bottom .btn_ft:focus {
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  #homepage section.about {
+    background-color: #E5EFF0;
+  }
+  #homepage section.about .container {
+    width: 100%;
+    padding: 0;
+  }
+  #homepage section.about .container h2 {
+    height: 16vh;
+    padding-top: 0px;
+    padding-left: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 26px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+  }
+  #homepage section.about .aboutme {
+    height: 30vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .aboutme .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  #homepage section.about .aboutme .title img {
+    width: 50px;
+  }
+  #homepage section.about .aboutme p {
+    padding-left: 15px;
+    text-indent: 28px;
+  }
+  #homepage section.about .aboutme ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .aboutme ul li {
+    width: 24%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #homepage section.about .aboutme ul li img {
+    width: 100%;
+  }
+  #homepage section.about .wedo {
+    width: 100%;
+    height: 54vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #homepage section.about .wedo .activity {
+    height: 24vh;
+  }
+  #homepage section.about .wedo .right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  #homepage section.about .wedo .right img {
+    width: 50px;
+  }
+  #homepage section.location {
+    background-color: #D3E3E3;
+  }
+  #homepage section.location .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage section.location .course_head {
+    height: 11vh;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #homepage section.location .course_head h2 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  #homepage section.location #allmap {
+    height: 32vh;
+    padding: 0;
+  }
+  #homepage section.location .area_detail {
+    height: 56vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    color: white;
+    padding: 0;
+  }
+  #homepage section.location .area_detail dt {
+    margin: 0;
+    padding: 6px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 1px solid #989EB4;
+  }
+  #homepage section.location .area_detail dd {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-bottom: 1px solid #515F84;
+  }
+  #homepage section.location .area_detail dd a {
+    display: inherit;
+    margin-left: 10px;
+    color: white;
+  }
+  #homepage section.location .area_detail dd a span {
+    color: orange;
+    margin-right: 5px;
+    margin-top: -2px;
+    -webkit-transform: rotate(260deg);
+    -ms-transform: rotate(260deg);
+    transform: rotate(260deg);
+  }
+  #homepage section.location .area_detail .work_time {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: none;
+  }
+}

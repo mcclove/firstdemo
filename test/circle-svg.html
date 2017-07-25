@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="KeyWord" content="cicle,learning">
+        <meta name="description" content="cicle-learning">
+        <meta name="Author" content="alsy">
+        <title>圆形进度条</title>
+
+        <!-- style-start -->
+            
+        <!-- style-end -->
+
+        <style>
+            circle {
+                -webkit-transition: stroke-dasharray .25s;
+                transition: stroke-dasharray .25s;
+            }
+            text {
+                  font-size: 12px;
+                  text-anchor: middle;  /* 文本水平居中 */
+                  dominant-baseline: middle; /* 文本垂直居中 */
+            }
+        </style>
+    
+    </head>
+    <body>
+
+    <svg width="200" height="200" viewbox="0 0 200 200">
+    <circle cx="100" cy="100" r="50" stroke-width="10" stroke="#D1D3D7" fill="none"></circle>
+    <circle cx="100" cy="100" r="50" stroke-width="10" stroke="#00A5E0" fill="none" transform="matrix(0,-1,1,0,0,200)" stroke-dasharray="0 1069"></circle>
+    <text x="100" y="100" class="text">I love SVG</text>
+    </svg>
+        
+
+        <!-- import-js -->
+            <script type="text/javascript" src="../plugins/jquery/jquery-min.js"></script>
+        <!-- import-my-js -->
+            
+
+            <script type="text/javascript">
+                    var circle = document.querySelectorAll("circle")[1];
+                    var text = document.querySelectorAll("text")[0];
+                    var percent = 20 / 100, perimeter = Math.PI * 2 * 50;
+                    circle.setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
+                    text.innerHTML = percent*100+"%";
+            </script>
+    </body>
+</html>

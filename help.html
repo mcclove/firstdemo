@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" Content="数理化,培优,奥数,数学,物理,化学,迎春杯,华杯赛,">
+    <meta name="description" Content="方田教育">
+    <link rel="shortcut icon" href="images/uploads/favicon.ico" />
+    <link rel="bookmark" href="images/uploads/favicon.ico" type="image/x-icon" 　/>
+    <title>方田教育</title>
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon css -->
+    <link href="http://at.alicdn.com/t/font_xtyoi303aeeo2yb9.css" rel="stylesheet">
+    <link href="css/css/ft_icon.css" rel="stylesheet">
+    <!-- fangtian css -->
+    <link href="css/css/fangtian.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="plugins/jquery/jquery-min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="plugins/layer/layer.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
+    <![endif]-->
+
+</head>
+<body class="help">
+    <!-- include header.php -->
+    
+    <span id="back" onclick="goBack()"><</span>
+<a href="javascript:void(0);" class="showphonereg logoff">退出</a>
+<div class="change">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div  class="headershow">  
+</div>
+<header id="header">
+
+    <div class="container xs_nav">
+        <div class="brand hidden-xs">
+            <a href=""><img src="./images/uploads/logo_ft.png" alt=""></a>
+        </div>
+        <select name="" id="">
+            <option value="">合肥市</option>
+        </select>
+        <div class="nav_content">
+            <a href="user_center.html" class="user_inf">
+                <div class="user_img">
+                    <img src="images/uploads/avator.jpg" alt="" class="img-circle img-responsive">
+                </div>
+                <div class="u_info">
+                    <h3 class="name" id="utitle">黄晓明</h3>
+                    <h5 class="grade" id="uleve">小学三年级</h5>
+                </div>
+            </a>
+            <ul class="reg  nav" id="beforelogin">
+                <li><a href="javascript:;" class="registerModal">注册</a></li>
+                <li><a href="javascript:;" class="loginModal">登录</a></li>
+            </ul>
+            <ul class="ft_nav  nav">
+                <li class=""><a href="index.html"><span class="iconfont ft-home"></span>首页</a></li>
+                <li><a href="course.html"><span class="iconfont ft-course"></span>选课中心</a></li>
+                <li><a href="http://bbs.fangtian.me" target="_black"><span class="iconfont ft-bbs"></span>交流中心</a></li>
+                <li class="dropdown">
+                    <a class="other"><span class="iconfont ft-about"></span>关于我们
+                     <span class="caret"></span></a>
+                    <ul class="dropdown_content">
+                        <li><a href="about.html">企业简介</a></li>
+                        <li><a href="teacher_list.html">名师介绍</a></li>
+                        <li><a href="course_system.html">课程体系</a></li>
+                        <li><a href="course_result.html">教学成绩</a></li>
+                        <li><a href="help.html">帮助中心</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown gf_wx">
+                    <a class="other"><span class="iconfont ft-mbphone"></span></a>
+                    <img class="dropdown_content wx_ewm" src="images/uploads/wx_qrcode.jpg" alt="">
+                </li>
+                <li class="dropdown pchide">
+                    <a class="other" id="afterlogin"><span class="iconfont ft-center"></span>个人中心
+                     <span class="caret"></span></a>
+                    <ul class="dropdown_content">
+                        <li><a href="user_center.html">个人主页</a></li>
+                        <li><a href="user_exam.html" class="center_ttl">天天练</a></li>
+                        <li><a href="user_mistake.html" class="center_ctb">错题本</a></li>
+                        <li><a href="user_course.html" class="center_wdkc">我的课程</a></li>
+                        <li><a href="user_data.html">基础资料</a></li>
+                        <li><a href="javascript:void(0);" class="logoff">退出</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<script>
+var role = 'std';
+var stdid = '';
+var stdname = '';
+var stdleve = '';
+var isLogin = '';
+var nopay = 0;
+if (role == "std") {
+    var isLogin = 1;
+    if (stdname != '') var isLogin = 2;
+}
+console.log(isLogin);
+if (isLogin == 0) {
+    //nologin
+    $('#beforelogin').show().css("opacity","1").css("z-index","9999");
+    $('#afterlogin').hide();
+    $(".dropdown.pchide").hide();
+    $(".user_inf").hide();
+} else {
+    $('#beforelogin').hide();
+    $('#afterlogin').show();
+    $(".dropdown.pchide").show();
+    $(".user_inf").show();
+}
+if (isLogin == 2) {
+    $('#utitle').html(stdname);
+    $('#uleve').html(stdleve);
+}
+</script>
+<form id="frmlogin" name="frmlogin" action="/fangtian_ol/index.php/User/loginOk.html" method="post">
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close frmlogin" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <h4 class="modal-title" id="loginModalLabel">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input name="loginphone" id="loginphone" type="phonenumber" class="form-control" placeholder="手机号码">
+                    </div>
+                    <div class="form-group">
+                        <input name="loginpwd" id="loginpwd" type="password" class="form-control" placeholder="密码(8-12位)">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span class="forget-password"><a href="javascript:void(0);" class="lostmregs">忘记密码？</a></span>
+                    <button type="button" class="btn btn-default frmlogin-reg genbtn">注册</button>
+                    <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
+                    <button type="button" class="btn btn-warning frmlogin-btn genbtn">登录</button>
+                </div>
+                <!--div id="resultlogin" class="resultlogin" style="display:none;"></div-->
+                <div id="logindiv" class="alert alert-warning" style="display:none;">
+                    <a href="#" class="close" onclick="$('#logindiv').hide();">
+                  &times;
+               </a>
+                    <span id="resultlogin"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- register Modal -->
+<form id="frmreg" name="frmreg" action="/fangtian_ol/index.php/User/regOk.html" method="post">
+    <div class="modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close frmreg" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <h4 class="modal-title" id="registerModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="phonenumber" name="regphone" id="regphone" class="form-control" placeholder="手机号码">
+                    </div>
+                    <div class="form-group get_verify">
+                        <input type="phonenumber" name="regverify" id="regverify" class="form-control" placeholder="验证码">
+                        <input class="btn btn-warning" type="button" id="regzphone" type="text" value=" 获取手机验证码 ">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="regpwd" id="regpwd" class="form-control" placeholder="密码(8-12位)">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
+                    <button type="button" class="btn btn-warning frmreg-btn genbtn">注册</button>
+                    <button type="button" class="btn btn-default frmreg-login genbtn">已有账号去登录</button>
+
+                </div>
+                <!--div id="resultreg" class="resultreg" style="display:none;"></div-->
+                <div id="regdiv" class="alert alert-warning" style="display:none;">
+                    <a href="#" class="close" onclick="$('#regdiv').hide();">
+                  &times;
+               </a>
+                    <span id="resultreg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!--lost Modal -->
+<form id="lostmreg" name="lostmreg" action="/fangtian_ol/index.php/User/regOk.html" method="post">
+    <div class="modal" id="lostModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close lostmreg" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <h4 class="modal-title" id="registerModalLabel">忘记密码</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="phonenumber" name="lostpwdphone" id="lostpwdphone" class="form-control" placeholder="手机号码">
+                    </div>
+                    <div class="form-group get_verify">
+                        <input type="phonenumber" name="lostpwdverify" id="lostpwdverify" class="form-control" placeholder="验证码">
+                        <input class="btn btn-warning" type="button" id="lostpwdzphone" type="text" value=" 获取手机验证码 ">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="lostpwdpwd" id="lostpwdpwd" class="form-control" placeholder="新密码">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="lostpwdrepwd" id="lostpwdrepwd" class="form-control" placeholder="确认新密码">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
+                    <button type="button" class="btn btn-warning lostmreg genbtn">取消</button>
+                    <button type="button" class="btn btn-default lostmreg-login genbtn">提交</button>
+
+                </div>
+                <!--div id="resultreg" class="resultreg" style="display:none;"></div-->
+                <div id="regdiv" class="alert alert-warning" style="display:none;">
+                    <a href="#" class="close" onclick="$('#regdiv').hide();">
+                  &times;
+               </a>
+                    <span id="resultreg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+    <div class="pcshow topbanner">
+        <img style="width:100%;" src="images/uploads/helpbanner.jpg" alt="">
+    </div>
+    
+    <div class="container system">
+        <div class="container">
+            <ul class="about_nav pcshow">
+                <li><a href="about.html">企业<span>简介</span></a></li>
+                <li><a href="teacher_list.html">名师<span>介绍</span></a></li>
+                <li><a href="course_system.html"><span>课程</span>体系</a></li>
+                <li><a href="course_result.html"><span>教学</span>成绩</a></li>
+                <li class="active"><a href="help.html">帮助<span>中心</span></a></li>
+            </ul>
+            <div id="help">
+                <div class="">
+            <h2 class="title">帮助中心</h2>
+            <div class="content">
+            <div class="helplist">
+                <h3 class="title">报名流程</h3>      
+                <div class="stage">
+                    <span>预约测试（官网/电话）</span>
+                    <span class="iconfont ft-down"></span>
+                    <span class="iconfont ft-right"></span>
+                    <span>参加测试确认班型</span>
+                    <span class="iconfont ft-down"></span>
+                    <span class="iconfont ft-right"></span>
+                    <span>选择课程</span>
+                    <span class="iconfont ft-down"></span>
+                    <span class="iconfont ft-right"></span>
+                    <span>选择班级</span>
+                    <span class="iconfont ft-down"></span>
+                    <span class="iconfont ft-right"></span>
+                    <span>缴费（现金/微信/支付宝）</span>
+                    <span class="iconfont ft-down"></span>
+                    <span class="iconfont ft-right"></span>
+                    <span>报名成功</span>    
+                </div> 
+            </div>
+            <div class="helplist">
+                <h3 class="title">报名方式</h3>
+                <div class="stage">
+                    <ol>
+                        <li>自助报名：登录方田教育官网：<a href="www.fangtian.me">www.fangtian.me</a>，在选课中心，自助报名。</li>
+                        <li>微信报名：进入“方田教育”微信公众号，下方菜单栏中，点击“我要>看一看”，选择校区、年级、科目、课程类型，点击课程名称，选择校区、老师、年限，点击“立即报名”。</li>
+                        <li>电话报名：拨打方田教育各校区前台电话，进行报名。</li>
+                        <li>现场报名：到方田教育各校区前台进行现场报名。
+                        <br>
+                            前台工作时间：寒暑假：周一至周日  早7:30-晚21:00；春秋季：周二至周五   下午13:30-晚21:00；周六至周日    早7:30-晚21:00
+                        </li> 
+                    </ol>
+                </div>
+            </div>
+
+            <div class="helplist">
+               <h3 class="title">支付方式</h3>
+                <div class="stage">
+                    <ol>
+                        <li>方田教育课程缴费只支持现金，微信，支付宝三种支付方式，课程报名但未支付，只能保留名额48小时，48小时后名额释放。</li>
+                        <li>
+                            登陆方田教育官网：www.fangtian.me，在【我的课程】页面找到‘待付款课程’点击【立即付款】直接支付即可，仅限微信支付与支付宝支付。
+                        </li>
+                        <li>
+                            现场支付：到方田教育各服务中心前台进行现场支付，支持现金，微信，支付宝三种支付方式。
+                        </li>
+                    </ol>
+                </div> 
+            </div>
+
+            <div class="helplist">
+               <h3 class="title">退费须知</h3>
+                <div class="stage">
+                    <ol>
+                        <li>课程开课后如需办理退费，不论学员上课与否，均按剩余课次退费（特殊优惠班级不退费），所退课次数目以办理当日系统内剩余课次数目为准。</li>
+                        <li>
+                            长期班剩余课次少于或等于三次时，本期长期班不予退费。
+                        </li>
+                        <li>
+                            办理退费时，必须在服务中心前台现场办理，同时必须出示本期班学员听课证。
+                        </li>
+                        <li>
+                            由于学员自身原因缺课，学校不予补课，不予退费。
+                        </li>
+                        <li>
+                            如由于特殊原因取消班次时，报名金额全部退还。
+                        </li>
+                    </ol>
+                </div> 
+            </div>
+
+            <div class="helplist">
+               <h3 class="title">调课转班</h3>
+                <div class="stage">
+                    <ol>
+                        <li>临时调课、永久转班仅限于同年份、同学期、同年级、同学科、同班型、总金额相同、总课次相同、剩余课次相同的班级之间互相办理。</li>
+                        <li>
+                            办理临时调课、永久转班时，必须携带原班学员听课证。
+                        </li>
+                        <li>
+                            临时调课：必须在调入班级有可调名额的情况下才可办理，长期班每期最多办理3次，短期班每期最多办理1次。
+                        </li>
+                        <li>
+                            永久转班：必须在转入班级有名额的情况下才可办理，长期班每期最多办理3次，短期班每期最多办理1次。
+                        </li>
+                    </ol>
+                </div> 
+            </div>
+
+            <div class="helplist">
+                <h3 class="title">常见问题</h3>
+                <div class="stage">
+                    <div class="list">
+                        <span>1.为什么要做入学测试</span>
+                        <p>非上一季在读学员，本季入学之前必须进行入学测试，目的主要是了解孩子学习情况，根据孩子现有水平来选择合适的班型，班型合适才能确保孩子最佳的学习效果。</p>
+                    </div>
+
+                    <div class="list">
+                    <span>2.暑假（或寒假）的多期课程内容一样吗？</span>
+                        <p>暑假（或寒假）多期课程每期内容都是一样的，孩子只需要选择一期的课程即可。</p>
+                        
+                        
+                    </div>
+                    <div class="list">
+                    <span>3.为什么要暑秋（寒春）连报？</span>
+                        <p>这样能够保证暑假上完了到秋季也有同样的班次可以上，不会出现没有名额的情况。对于小学来说，暑假内容和秋季内容是连贯的两部分知识，暑假不学习会导致到秋季后孩子知识上有缺失。对于初中来说，暑假预科和秋季的同步拓展是相辅相成的，暑假不学预科，秋季跟上同步拓展的课程有一定的困难。此外，秋季班时间实在调整不过来也可以选择退费。方田教育所有课程家长可以全程旁听，可以随时退费。</p>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <!-- <h3 class="title">学员评价</h3>
+            <p class="desc">方田全职骨干教师，深知现在孩子所思所想，上课充满激情，责任心强。能够很好的调动孩子们学习兴趣。</p>
+             -->
+            </div>
+            <div class="text-right">
+                <small>该内容的解释权在法律规定的范围内归本公司所有</small>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <a id="back-top"><span class="iconfont ft-up"></span></a>
+     
+<footer>
+    <div class="container">
+        <div class="pull-left">
+            <span>©2015皖ICP备14012341号-1</span><span class="hidden-xs"> | 每天进步一点点</span>
+        </div>
+        <div class="pull-right">
+            <a class="suggest" href="javascript:void(0);">
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp; 校长信箱
+            </a>
+            
+        </div>
+    </div>
+</footer>
+    
+
+<!-- 未付款模态框 -->
+<div class="modal fade" id="nopay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close nopay" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">付款提示</h4>
+            </div>
+            <div class="modal-body">
+            <img src="images/uploads/brow2.png" alt="">您还有课程未付款<br>
+            在截止之前付款才能成功报名哦！</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default genbtn" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-warning genbtn">去付款</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 天天练模态框 -->
+<div class="modal fade" id="finsh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close finsh" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+            	<img src="images/uploads/brow2.png" alt="">
+            	<p>你已经完成了今日的全部天天练</p>		
+            </div>
+            
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 测试模态框 -->
+<div id="test" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close test" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">测试提醒</h4>
+            </div>
+            <div class="modal-body"><img src="images/uploads/brow2.png" alt="">选课中心选择测试课程<br/><br/>
+            测试后才能找到最合适你的班级哦！
+</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default test genbtn" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-warning genbtn">报名测试</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 校长信箱 -->
+<div id="mail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close mail" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">校长信箱</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" name="custorphone" placeholder="请填写您的手机号">
+                    <textarea name="custorads" id="subject" maxlength="1000" onkeyup="checkLength(this)" placeholder="请填写您的建议"></textarea>
+                    <br>
+                    <span id="subjectchk" style="color: #d7d7d7">(<strong id="checklen">0/1000</strong>)</span>
+                </form>
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default mail genbtn" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-warning master-btn genbtn">提交</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 标签 -->
+<div id="parent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close parent" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">课程服务</h4>
+            </div>
+            <div class="modal-body">
+                <h4 class="title">家长旁听</h4>
+                <div class="content">
+                    全部课程鼓励家长全程旁听，一则是由于我们对自身教学的自信，二则旁听可以让家长随时观察到孩子的听课状态，与老师一起帮助孩子形成良好的听课习惯。
+                </div>
+            </div>
+          <div class="modal-footer">
+    <button type="button" class="btn btn-warning parent genbtn" data-dismiss="modal">关闭</button>
+    </div> 
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- qq群模态框 -->
+<div id="qq" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close qq" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">方田QQ群</h4>
+            </div>
+            <div class="modal-body">
+                
+                <div class="content">
+                    <span class="title">新一年级QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=b00fc39e0502cb7e4bf6bd20d63456703393ee7a25c0f0af78fb2273b3a0a00b"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥新一年级牛娃1群" title="合肥新一年级牛娃1群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新二年级QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=881eb508f644e00c25e5d7d7dd68cfa5141507abc7aefc73c5fcb5007b7c9809"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥方田新二年级牛娃" title="合肥方田新二年级牛娃"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新三年级QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=53672e19f2824772a9f5edcc81f76ebd36d91d4871a762d312fee8842c265efc"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥方田三年级牛娃群" title="合肥方田三年级牛娃群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新四年级QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=2c2332d8b3bcebc9a809fcb11f240774b2297c1e29f09018c2595b26a4424fb2"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="方田新四年级牛娃1群" title="方田新四年级牛娃1群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新五年级QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e9df9cb9e72d0634fe4e95c17c2a8e4299413e1f2a32d5197320fe3e86736899"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥新五年级牛娃2群" title="合肥新五年级牛娃2群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">2018小升初QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=165d9998a956601155963bb4dd37d839ec41850166dbd7759a985e7b761fc7a1"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="2018合肥小升初牛娃2群" title="2018合肥小升初牛娃2群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新初一QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=5e45c87924a5c73486c83b7ba3871833231dc51b7dd4ee44ff2ba812f7bde505"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="2017合肥新初一牛娃4群" title="2017合肥新初一牛娃4群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新初二QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=f02a9811ccb1f7401a71c6ed82a7ff67bf4af8cf790808b99ae1e5e340d16bf9"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥新初二牛娃2群" title="合肥新初二牛娃2群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新初三QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=903da24b9749607b153dff2b240911601852eeeb6dbf08e02205c386d54a632b"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="2017合肥新初三牛娃2群" title="2017合肥新初三牛娃2群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">新高一QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=d332919cf9995d1314b93162c98357426c02bc7588aaaba1e919dced90e0f2ba"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="2017合肥新高一牛娃3群" title="2017合肥新高一牛娃3群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">物理QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=be6493c0ad03605a3be5875c996ffca40f04c3cbfb0e059b6f9f97086afd84d9"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥中考物理讨论群" title="合肥中考物理讨论群"></a>
+                </div>
+                <div class="content">
+                    <span class="title">化学QQ群</span>
+                    <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=ba494b0d98c09bfee1a9164bc5cb139a40dd54951ab3d8185b4fd95c4fd6d658"><img style="width: auto;" border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="合肥中考化学讨论群" title="合肥中考化学讨论群"></a>
+                </div>
+            </div>
+          <div class="modal-footer">
+    <button type="button" class="btn btn-warning qq genbtn" data-dismiss="modal">关闭</button>
+    </div> 
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+    <script src="js/fangtian.js"></script>
+    <!-- <script src="js/user.js"></script> -->
+    <script>
+    </script>
+<script type="text/javascript" src="js/public.js"></script></body>
+
+</html>

@@ -1,0 +1,323 @@
+.teacher_course {
+    footer{
+        position: fixed;
+    }
+    @media (min-width: 769px) {
+        footer{
+            position: static;
+        }
+        .nomore{
+            margin:20px 0;
+            color:#9FA1A4;
+        }
+        // height: 100%;
+        margin-top: 50px;
+        // background-color: #EEEEEE;
+        .banner {
+            background-image: url(../../images/uploads/course_center.jpg);
+            height: 120px;
+            text-align: center;
+            h1 {
+                line-height: 120px;
+                // color: white;
+                letter-spacing: 5px;
+            }
+        }
+        #teacher_course {
+            .container {
+                padding: 0 10px;
+                .content.course_list{
+                    margin-top: 40px;
+                }
+            }
+            h2.title {
+
+            }
+            .list_nav {
+                // margin: 15px 0;
+                // display: flex;
+                // justify-content: space-around;
+                border-bottom: 1px solid #618991;
+                height: 50px;
+                margin: 10px 0;
+                li {
+                    padding: 0 15px;
+                    float: left;
+                    height: 40px;
+                    line-height: 40px;
+                    margin: 0 15px;
+                    border-radius: 10px;
+                    // color: white;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    &.checked {
+                        background-color: #618991;
+                    }
+                }
+            }
+           
+            .tch_info {
+                width: 100%;
+                height: 180px;
+
+                margin: 0 auto;
+                display: flex;
+              
+                align-items: center;
+                background: #E3EEF0;
+                padding: 10px 0;
+                justify-content: center;
+                a {
+                   width: 150px;
+                   display: block;
+                  
+                    margin: 0;
+                    margin-right: 40px;
+                    
+                }
+                .info {
+                	height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    p{
+                    	margin-top: 20px;
+                    	font-size: 16px;
+                    	letter-spacing: 1px;
+                    }
+                }
+                .name {
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                    margin-right: 20px;
+                }
+                .school {
+                    margin-top: 5px;
+                    letter-spacing: 4px;
+                    color: #F6951D;
+                    font-size: 20px;
+                }
+                .ft_btn {
+                    width: 100%;
+                    padding: 10px 10px;
+                    margin: 5px 0 0;
+                    color: white;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    border-radius: 5px;
+                    background-color: #3C3B62;
+                }
+            }
+            .desc {
+                text-indent: 28px;
+                padding: 15px 10px;
+                margin: 10px 0 20px;
+                background-color: #575C84;
+                color: white;
+                letter-spacing: 1.5px;
+                border-radius: 5px;
+            }
+            .content {
+                h3.title {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 15px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    padding: 0;
+                    margin: 0;
+                }
+                p {
+                    background-color: transparent;
+                }
+                ul.bbs {
+                    background-color: transparent;
+                    margin: 20px 0;
+                    li {
+                        width: 100%;
+                        border-radius: 0;
+                        display: flex;
+                        padding: 5px 0;
+                        margin: 0;
+                        .time {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 15%;
+                            color: white;
+                            font-size: 15px;
+                            letter-spacing: 3px;
+                        }
+                        a {
+                            // width: 80%;
+                            background-color: transparent;
+                            padding: 10px 5px;
+                            padding-left: 20px;
+                            letter-spacing: 2px;
+                            border-bottom: 1px solid #A0AFBD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .showpc{
+            display: none;
+        }
+        .nomore{
+            margin:20px 0;
+            color:#9FA1A4;
+        }
+        .top-bannar{
+            display:none;
+        }
+        // height: 100%;
+        margin-top: 0px;
+        background: linear-gradient(#4e4376, #2b5876);
+        background-attachment: fixed;
+        .banner {
+            display: none;
+        }
+        #teacher_course {
+            .container {
+                padding: 0 10px;
+            }
+            h2.title {
+                width: 70%;
+                text-align: center;
+                color: white;
+                font-size: 22px;
+                letter-spacing: 5px;
+                padding: 20px 0 20px;
+                margin: 0 auto;
+                border-bottom: 1px solid #8482A8;
+            }
+            .list_nav {
+                margin: 15px 0;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    padding: 10px 10px;
+                    background-color: #373E62;
+                    border-radius: 5px;
+                    color: white;
+                    letter-spacing: 2px;
+                    &.checked {
+                        background-color: #DBDCE5;
+                        color: #333;
+                    }
+                }
+            }
+            .content {
+               
+            }
+            .tch_info {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                padding: 10px 0;
+                p{
+                    display: none;
+                }
+                a {
+                    width: 40%;
+                    display: block;
+                    margin: 0;
+                    margin-right: 10px;
+                }
+                .info_title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .name {
+                    letter-spacing: 2px;
+                }
+                .school {
+                    margin-top: 5px;
+                    letter-spacing: 4px;
+                }
+                .ft_btn {
+                    width: 100%;
+                    padding: 10px 10px;
+                    margin: 5px 0 0;
+                    color: white;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    border-radius: 5px;
+                    background-color: #3C3B62;
+                }
+            }
+            .desc {
+                text-indent: 28px;
+                padding: 15px 10px;
+                margin: 10px 0 20px;
+                background-color: #575C84;
+                color: white;
+                letter-spacing: 1.5px;
+                border-radius: 5px;
+            }
+            .content {
+                h3.title {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 15px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    padding: 0;
+                    margin: 0;
+                }
+                p {
+                    background-color: transparent;
+                }
+                ul.bbs {
+                    background-color: transparent;
+                    margin: 20px 0;
+                    li {
+                        width: 100%;
+                        border-radius: 0;
+                        display: flex;
+                        padding: 5px 0;
+                        margin: 0;
+                        .time {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 15%;
+                            color: white;
+                            font-size: 15px;
+                            letter-spacing: 3px;
+                        }
+                        a {
+                            // width: 80%;
+                            background-color: transparent;
+                            padding: 10px 5px;
+                            padding-left: 20px;
+                            letter-spacing: 2px;
+                            border-bottom: 1px solid #A0AFBD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

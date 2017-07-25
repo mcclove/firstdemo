@@ -1,0 +1,173 @@
+ .user_info {
+     
+     @media (min-width: 769px) {
+         width: 20%;
+         height: 100%;
+         float: left;
+         .user_img {
+             width: 100%;
+             position: relative;
+             img {
+                 width: 120px;
+                 height: 120px;
+                 //margin: 0 auto;
+             }
+             h3,
+             h5 {
+                 text-indent: 25px;
+             }
+             .score {
+                 width: 40px;
+                 height: 40px;
+                 border-radius: 50%;
+                 background-color: #EC9324;
+                 text-align: center;
+                 color: white;
+                 font-size: 12px;
+                 position: absolute;
+                 top: 90px;
+                 left: 60%;
+                 .num {
+                     display: block;
+                     margin-bottom: -3px;
+                     font-size: 18px;
+                 }
+             }
+         }
+         .user_nav {
+             margin-top: 15px;
+             // padding-left: 15px;
+             font-size: 16px;
+             .showphone{
+                display: none;
+             }
+             li {
+                 margin: 10px;
+                 // background-color: #f2f2f2;
+                 height: 40px;
+                 line-height: 40px;
+                 a {
+                     letter-spacing: 3px;
+                     color:#000;
+                     &:hover{
+                        color:#F4941B;
+                        .line{
+                            background: #F4941B;
+                        }
+                     }
+                }
+                 .line {
+                     height: 16px;
+                     display: inline-block;
+                     width: 2px;
+                     background-color: #4FC5DF;
+                     margin: 0 5px;
+                 }
+                 &:hover {
+                     border-color: red;
+                 }
+                 &.active {
+                     .line {
+                         background-color: #EC9324;
+                     }
+                     a {
+                         color: #EC9324;
+                         border-color: #EC9324;
+                     }
+                 }
+             }
+         }
+     }
+     @media (max-width: 768px) {
+         // margin: 0 -15px;
+         overflow: hidden;
+         position: relative;
+         .user_img {
+             padding: 25px 10px;
+             img {
+                 margin: 0 auto;
+                 width: 100px;
+             }
+             h3,
+             h5 {
+                 text-align: center;
+                 margin-top: 10px;
+                 color: white;
+             }
+             h3 {
+                 letter-spacing: 3px;
+             }
+             h5 {
+                 margin-bottom: 0;
+             }
+             .score {
+                 width: 50px;
+                 height: 50px;
+                 border-radius: 50%;
+                 position: absolute;
+                 // right: -20px;
+                 top: 60px;
+                 background-color: rgba(255, 255, 255, 0.5);
+                 text-align: center;
+                 color: white;
+                 margin-top: -15px;
+                 .num {
+                     display: block;
+                     font-size: 20px;
+                 }
+             }
+         }
+         .user_nav {
+             padding: 0;
+             margin-top: 10px;
+             padding-bottom: 10px;
+             // border-bottom: 1px solid #333;
+             display: flex;
+             justify-content: space-around;
+             list-style: none;
+             li {
+                 width: 28%;
+                 height: 50px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 background-color: rgba(255, 255, 255, 0.1);
+                 border-radius: 5px;
+                 a {
+                     color: white;
+                     display: inline-block;
+                     letter-spacing: 3px;
+                     span {
+                         font-size: 16px;
+                         display: block;
+                         text-align: center;
+                         &.iconfont,
+                         &.line {
+                             display: none;
+                         }
+                     }
+                     &:hover,
+                     &:focus {
+                         text-decoration: none;
+                         outline: none;
+                         background-color: transparent;
+                     }
+                 }
+                 &.active {
+                     background-color: #fff;
+                     text-decoration: none;
+                     span,
+                     a {
+                         color: #50535A;
+                         border-color: #EC9324;
+                     }
+                 }
+             }
+             .main,
+             .message,
+             .data {
+                 display: none;
+             }
+         }
+     }
+ }

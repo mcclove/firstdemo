@@ -1,0 +1,146 @@
+.course_result {
+   footer{
+    //position: fixed;
+   }
+    #course_result{
+        //margin-top: 35px;
+       //padding-left: 135px;
+        h2.title {
+                //width: 70%;
+                //text-align: center;
+                color: #000;
+                //font-size: 22px;
+                letter-spacing: 3px;
+                //padding: 30px 0 10px;
+                //margin: 0 auto;
+                //border-bottom: 1px solid #8482A8;
+        }
+        .content{
+            h3{
+                text-align: center;
+            }
+            p{
+                text-indent: 26px;
+                margin: 10px 0;
+                letter-spacing: 2px;
+                font-size: 16px;
+            }
+            img{
+                margin: 5px 0;
+            }
+        }
+    }
+    @media (min-width: 769px) {
+        footer{
+            position: static;
+        }
+        #course_result{
+        //margin-top: 35px;
+            padding-left: 135px;
+        }
+        h2.title {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .content{
+            
+            .list-honor{
+                display: flex;
+                    margin-bottom: 20px;
+                    .list{
+                        overflow: hidden;
+                    }
+                a{
+                    //position: relative;
+                    //overflow: hidden;
+                    .topimg{
+                        position: relative;
+                        
+                    }
+                    .bottomtext.centertext{
+                       position: absolute;
+                       top: -50%;
+                       opacity: 0;
+                       transition: all .5s;
+                        -moz-transition: all .5s; /* Firefox 4 */
+                        -webkit-transition: all .5s; /* Safari 和 Chrome */
+                        -o-transition: all .5s; /* Opera */
+                    }
+                    &:hover .bottomtext.centertext{
+                        top:0;
+                        opacity: 1;                         
+                    }
+                }
+            }
+            h3{
+                font-family: ftFont;
+                font-size: 50px;
+                color:#F49C56;
+            }
+            
+        }
+
+    }
+    @media (max-width: 768px) {
+        // height: 100%;
+        .pcshow{
+            display: none;
+        }
+        .content{
+            
+            .list-honor{
+                a{
+                  display: flex;
+                flex-direction:row;  
+                }
+                
+            }
+            h3{
+                font-family: ftFont;
+                font-size: 50px;
+                color:#F49C56;
+            }
+        }
+        margin-top: 0px;
+        //margin-bottom: 7vh;
+        background: linear-gradient(#4e4376, #2b5876);
+        background-attachment: fixed;
+        #course_result {
+            margin-top: 0;
+            h2.title {
+                color: white;
+                padding: 20px 0 20px;
+                text-align: center;
+                margin:0 auto;
+                border-bottom: 1px solid #8482A8;
+            }
+            .content {
+                padding: 20px 0;
+                h3.title {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 15px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 5px;
+                    padding: 0;
+                    margin: 0;
+                }
+                img {
+                    max-width: 100%;
+                    margin: 5px 0;
+                }
+                p {
+                    text-indent: 26px;
+                    color: white;
+                    margin: 10px 0;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
